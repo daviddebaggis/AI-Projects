@@ -1,0 +1,50 @@
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --muted-foreground: #475569;
+  --border: rgba(15, 23, 42, 0.12);
+  --card-background: #ffffff;
+  --surface: #f1f5f9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #05070e;
+    --foreground: #f1f5f9;
+    --muted-foreground: #94a3b8;
+    --border: rgba(148, 163, 184, 0.25);
+    --card-background: rgba(15, 23, 42, 0.65);
+    --surface: rgba(30, 41, 59, 0.75);
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
